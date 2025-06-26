@@ -1,0 +1,23 @@
+Report '_graphs in HTML'
+/*
+*  Tests whether the current graph has already been reported, if not
+*  Adds the current graph among the reported the graphs variable (Graphs)
+*  Creates a new HTML file for this graph
+*  Calls __stylesheet in HTML-subreport
+*  Calls _Dictionary in HTML-subreport
+*  Calls _Object properties  in HTML-subreport
+*  Calls _Relationships in HTML-subreport
+*/
+if not $Graphs =~ oid%wildsp then
+	variable 'Graphs' append oid ' ' close
+	filename subreport '_default directory' run subreport '_id and oid' run '.html' write
+		'<HTML>'
+		subreport '__stylesheet in HTML' run
+		'<BODY>'
+		subreport '_Dictionary in HTML' run
+		subreport '_Object properties in HTML' run
+		subreport '_Relationships in HTML' run
+		'</BODY></HTML>'
+	close
+endif
+endreport

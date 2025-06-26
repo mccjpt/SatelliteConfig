@@ -1,0 +1,25 @@
+_SatelliteConfigFilesToGit()
+
+filename 'GeneratorTargetDirectories.bat' write
+
+'del /S /Q "' @target '" 
+mkdir "' $xsdTarget '"
+mkdir "' $csTarget '"
+mkdir "' $jsonTarget '"
+mkdir "' $htmlTarget '"
+mkdir "' $textTarget '"
+'
+
+if @isCustom then
+'mkdir "' $corecsTarget '"
+'
+endif
+
+if @isPublish then
+'mkdir "' $mecTarget '"
+'
+endif
+
+close
+
+external '"GeneratorTargetDirectories.bat"' executeblocking 

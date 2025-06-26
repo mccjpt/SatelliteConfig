@@ -1,0 +1,10 @@
+_owlContents()
+
+_owlStart()
+_owlClasses(type)
+
+'    <!-- Individuals -->'
+foreach .(*Component); { 
+	_owlIndividuals()
+}
+'</rdf:RDF>'

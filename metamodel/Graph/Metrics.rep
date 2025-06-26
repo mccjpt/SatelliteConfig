@@ -1,0 +1,11 @@
+Report 'Metrics'
+/* Metrics report reads model hierarchy and reports number of objects and relationships per graph */ 
+subreport '_translators' run
+/* Initialize the variable for counting whether the graph is already reported for cases of recursive model hierarchies */
+$Graphs=' '
+$num_graphs='0'
+subreport '_GraphMetrics' run 
+newline
+'METRICS:' newline
+'Number of reported graphs: ' $num_graphs
+endreport

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbolLibrary xmlns="http://www.metacase.com/symbol" xmlns:sym="http://www.metacase.com/symbol">
+	<librarySymbol name="AntennaComponent_sub">
+		<objectSymbol offset="36,8" scaleFilter="1,1">
+			<defaultConnectable isSticky="true" points="36,8 70,8 70,45 36,45 36,8" targetPointX="53" targetPointY="27" usesGrid="false"></defaultConnectable>
+			<svg baseProfile="tiny" height="45" version="1.2" width="70" xmlns="http://www.w3.org/2000/svg">
+				<g fill="none" stroke="rgb(0,0,0)" sym:height="37" sym:width="34" sym:x="3.6e1" sym:y="8.0e0">
+					<ellipse cx="59.0323" cy="22.8" fill="rgb(255,255,255)" rx="10.9677" ry="14.8" stroke="rgb(0,0,0)" stroke-width="1" sym:startAngle="3.6e2" sym:sweepAngle="-3.6e2">
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</ellipse>
+					<line stroke="rgb(0,0,0)" stroke-width="2" x1="48.0645" x2="37.0968" y1="37.6" y2="22.8">
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</line>
+					<line stroke="rgb(0,0,0)" stroke-width="2" x1="59.0323" x2="48.0645" y1="37.6" y2="37.6">
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</line>
+					<line stroke="rgb(0,0,0)" stroke-width="1" x1="48.0645" x2="59.0323" y1="37.6" y2="37.6">
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</line>
+					<line stroke="rgb(0,0,0)" stroke-width="1" x1="70" x2="70" y1="45" y2="22.8">
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</line>
+					<ellipse cx="61.7742" cy="23.17" fill="rgb(255,255,255)" rx="1.64517" ry="1.85" stroke="rgb(0,0,0)" stroke-width="1" sym:startAngle="3.6e2" sym:sweepAngle="-3.6e2">
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</ellipse>
+					<ellipse cx="38.7419" cy="23.17" fill="rgb(170,170,170)" rx="2.74193" ry="1.11" stroke="rgb(0,0,0)" stroke-width="1" sym:startAngle="3.6e2" sym:sweepAngle="-3.6e2">
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</ellipse>
+					<line stroke="rgb(0,0,0)" stroke-width="1" x1="59.0323" x2="61.2258" y1="8" y2="21.32">
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</line>
+					<line stroke="rgb(0,0,0)" stroke-width="1" x1="61.2258" x2="56.8387" y1="25.02" y2="37.6">
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</line>
+					<line stroke="rgb(0,0,0)" stroke-width="1" x1="48.0645" x2="60.129" y1="22.8" y2="22.8">
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</line>
+					<line stroke="rgb(0,0,0)" stroke-width="1" x1="63.4194" x2="70" y1="22.8" y2="22.8">
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</line>
+					<line stroke="rgb(0,0,0)" stroke-width="1" x1="49.1613" x2="60.129" y1="15.4" y2="22.06">
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</line>
+					<line stroke="rgb(0,0,0)" stroke-width="1" x1="60.129" x2="50.2581" y1="24.28" y2="30.94">
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</line>
+					<line stroke="rgb(0,0,0)" stroke-width="1" x1="68.9032" x2="62.3226" y1="15.4" y2="22.06">
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</line>
+					<line stroke="rgb(0,0,0)" stroke-width="1" x1="62.3226" x2="66.7097" y1="25.02" y2="33.16">
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</line>
+					<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+				</g>
+			</svg>
+		</objectSymbol>
+	</librarySymbol>
+</symbolLibrary>

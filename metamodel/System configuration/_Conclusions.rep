@@ -1,0 +1,8 @@
+_Conclusions()
+
+'## 3. Conclusion' newline newline
+'All checked requirements for the ' id ' system configuration have been **'
+if $error then 
+	'NOT '
+endif
+'SATISFIED** based on the current data in system_config.json, and requirements.csv.'

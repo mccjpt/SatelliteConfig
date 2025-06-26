@@ -1,0 +1,7 @@
+Report '__stylesheet in HTML'
+filename subreport '_default directory' run 'metaedit.css' write
+	subreport '__stylesheet data' run
+close 
+'<HEAD><TITLE>' id ' report</TITLE>
+<link rel="stylesheet" type="text/css" href="metaedit.css">'
+endreport

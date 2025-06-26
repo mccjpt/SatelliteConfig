@@ -1,0 +1,103 @@
+Graph_Simple_GOPRR_user_3334325822
+System configuration
+3_177
+Metamodel [GOPRR]
+Graph: System configuration <Metamodel [GOPRR]> 3_177
+	Graph name: System configuration
+	__UUID: wopfUdD2Qyu/E2tr6UmiUg
+	Namespace: 
+	Properties: System id Version System description Related requirements
+	Object: System id <Property [GOPRR]> 3_314
+		Property name: System id
+		__UUID: E57mcoLdR7S4XUHxhnvY5w
+		Local name: 
+		Datatype: String
+		Object Datatype: 
+		Default value(s): 
+		Uniqueness: globally
+		Description: System id mandatory and must be unique. Use consistent naming policy.
+	Object: Version <Property [GOPRR]> 3_558
+		Property name: Version
+		__UUID: Z2Gv6L7ZRkynr8kb3Jv09A
+		Local name: 
+		Datatype: String
+		Object Datatype: 
+		Default value(s): 
+		Uniqueness: 
+		Description: Version is mandatory.
+	Object: System description <Property [GOPRR]> 3_332
+		Property name: System description
+		__UUID: 7/XGsqGZQMWzTOXg6PancQ
+		Local name: Description
+		Datatype: Text
+		Object Datatype: 
+		Default value(s): 
+		Uniqueness: 
+		Description: 
+	Object: Related requirements <Property [GOPRR]> 3_540
+		Property name: Related requirements
+		__UUID: xt9WCQXcRaiWBBRFmngxSw
+		Local name: 
+		Datatype: Collection
+		Object Datatype: 
+		Default value(s): 
+		Uniqueness: 
+		Description: List of requirements graphs related to the system configuration.
+	Constraints: 
+	Object order: 
+	Description: System configuration consists of satellite components.
+Object: _Component <Object [GOPRR]> 3_364
+	Object name: _Component
+	__UUID: uC3NszAuTi+dxXolDn43xg
+	Properties: componentID component name hasMass
+	Object: componentID <Property [GOPRR]> 3_442
+		Property name: componentID
+		__UUID: EMBvUeTfTGOh97tmAvsOaA
+		Local name: 
+		Datatype: String
+		Object Datatype: 
+		Default value(s): 
+		Uniqueness: globally
+		Description: Component ID is mandatory and must be unique.
+	Object: component name <Property [GOPRR]> 3_472
+		Property name: component name
+		__UUID: OlJYUEi7Qdq8khFwcX1Zfg
+		Local name: name
+		Datatype: String
+		Object Datatype: 
+		Default value(s): 
+		Uniqueness: per graph
+		Description: component name is a mandatory property and unique within the system configuration.
+	Object: hasMass <Property [GOPRR]> 3_424
+		Property name: hasMass
+		__UUID: HgTJrxl0TbGnyLTYx6lZVQ
+		Local name: 
+		Datatype: Decimal
+		Object Datatype: 
+		Default value(s): 
+		Uniqueness: 
+		Description: Mandatory value.
+	Occurrence: 0
+	Description: Satellite component
+Object: SatelliteComponent <Object [GOPRR]> 3_460
+	Object name: SatelliteComponent
+	__UUID: 3484fVYhROKnPAvT3bpe2g
+	Properties: quantity
+	Object: quantity <Property [GOPRR]> 3_490
+		Property name: quantity
+		__UUID: 93/v30i/TJe5XNSiaUAbgw
+		Local name: 
+		Datatype: Number
+		Object Datatype: 
+		Default value(s): 1
+		Uniqueness: 
+		Description: Number of units
+	Occurrence: N
+	Description: Component of the satellite system.
+Relationship: Configured component <Property [GOPRR]> 3_605
+	Local name: Configured component
+	__UUID: 16b/QdBeRM2nMcz6Tg4I4g
+	Uniqueness: 
+  Role: Has property [GOPRR] <Has property [GOPRR]>  Object: <Object [GOPRR]> 3_460
+  Role: F <NonProperty of [GOPRR]>  Object: <Object [GOPRR]> 3_364
+	Collection: F

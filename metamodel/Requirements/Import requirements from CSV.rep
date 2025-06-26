@@ -1,0 +1,31 @@
+Report 'Import requirements from CSV'
+/* imports requirements from csv file */
+
+_importTranslators()
+
+local 'importedFile' write
+	prompt 'Choose VSC file to be imported' askFilename
+close
+
+if @importedFile <> '' then
+	local 'file' write
+		filename @importedFile encoding 'UTF-8' read
+	close
+	
+	filename subreport '_default directory' run @importedFile%fileName '.mxm' encoding 'UTF-8' write
+		'<?xml version="1.0" encoding="UTF-8"?>' newline
+		'<gxl xmlns="http://www.metacase.com/gxlGOPRR">' newline
+		_Import_CSVFile(@importedFile%fileName)
+		do @file {
+			@index++%null
+			if id and @index > '1' num then
+				_Import_Reqs()
+			endif
+		}	
+		'	</graph>' newline
+		'</gxl>'
+	close
+	internal 'fileInPatch: "' subreport '_default directory' run @importedFile%fileName '.mxm"' execute
+	
+endif
+endreport

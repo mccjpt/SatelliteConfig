@@ -1,0 +1,12 @@
+_calculated_total_mass_kg()
+
+@mass = '0'
+foreach .SatelliteComponent {	
+	local 'mass' append '+(' :Quantity '*' do :Configured component; {:hasMass;} ')' close
+}
+if @mass <> '0' then
+	variable 'calculated_total_mass_kg' write math @mass evaluate close
+
+	/* applied for report summary */
+	variable 'REQ001' write math @mass evaluate close
+endif

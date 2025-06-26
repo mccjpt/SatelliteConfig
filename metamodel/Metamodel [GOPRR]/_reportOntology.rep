@@ -1,0 +1,26 @@
+_reportOntology()
+
+to '%remfirstDash
+/^(_)?(.*)$/ $$2'
+endto
+
+foreach .Object [GOPRR]; where not ~Subtype [GOPRR] {
+'     <owl:Class rdf:about="http://www.example.com/satellite#' :Object name%remfirstDash '"/>' newline newline
+}
+
+foreach .Object [GOPRR]; where ~Subtype [GOPRR] {
+'    <owl:Class rdf:about="http://www.example.com/satellite#' :Object name%remfirstDash '">
+        <rdfs:subClassOf rdf:resource="http://www.example.com/satellite#' do ~Subtype [GOPRR]~Supertype [GOPRR].() {:Object name%remfirstDash} '"/>
+    </owl:Class>' newline newline
+}
+'    <!-- Data Properties -->' newline
+foreach .Object [GOPRR]; { 
+	do :Properties; {
+		if :Property name <> 'component name' then
+'    <owl:DatatypeProperty rdf:about="http://www.example.com/satellite#' :Property name; '">
+        <rdfs:domain rdf:resource="http://www.example.com/satellite#' :Object name;1%remfirstDash '"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#' :Datatype%lower '"/>
+    </owl:DatatypeProperty>' newline newline
+		endif
+	}
+}

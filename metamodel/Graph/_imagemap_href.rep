@@ -1,0 +1,7 @@
+Report '_imagemap_href'
+'href="#' oid '"'
+' onMouseOut="window.status=''''; return true"'
+' onMouseOver="window.status='''
+id ': ' type
+''' return true"'
+endreport

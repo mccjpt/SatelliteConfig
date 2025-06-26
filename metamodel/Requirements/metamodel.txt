@@ -1,0 +1,77 @@
+==========================
+Graph Type
+==========================
+Requirements
+	Specifies system requirements.
+	---------------------------------------------
+	Name: String
+
+==========================
+Object Types
+==========================
+Requirement
+	Requirement for the system consisting of its  uniwue ID, description and constraint expressed with parameter, operator and value.
+	---------------------------------------------
+	RequirementID: String
+		RequirementID is mandatory and must be unique. Use consistent naming policy, like REQxxx.
+		---------------------------------------------
+	Description: Text
+	Parameter: String
+		Parameter is mandatory
+		---------------------------------------------
+	Operator: String
+	Value: String
+		Value is mandatory,
+		---------------------------------------------
+	Unit: String
+
+==========================
+Relationship Types
+==========================
+
+==========================
+Role Types
+==========================
+
+==========================
+Extra Types
+==========================
+
+==========================
+Bindings
+==========================
+
+==========================
+Constraints
+==========================
+Property "Description" in Requirement must have unique values
+
+==========================
+Subgraphs
+==========================
+
+==========================
+Generators
+==========================
+!csv
+csv
+Import requirements from CSV
+
+==========================
+Sub-Generators
+==========================
+_csvContents
+_importTranslators
+_Import_CSVFile
+_Import_Reqs
+_oper<
+_oper<=
+_oper<>
+_oper=
+_oper>
+_oper>=
+_REQ001
+_REQ002
+_Status
+_vcsFiles
+

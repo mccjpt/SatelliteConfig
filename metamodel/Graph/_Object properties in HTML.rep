@@ -1,0 +1,16 @@
+Report '_Object properties in HTML'
+foreach .() 
+{ 
+	'<A NAME="' oid '"></A>'
+	'<H3>' subreport '__id and type' run '</H3>'
+	'Properties:'
+	subreport '__Table HTML' run
+	do :()
+	{ 
+		'<TR><TH align="left">' type '</TH><TD>' id '&nbsp;</TD></TR>'
+	}
+'</TABLE>' newline '<BR>'
+subreport '_Relationships in HTML' run
+subreport '_Links in HTML' run
+}
+endreport

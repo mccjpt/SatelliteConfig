@@ -1,0 +1,10 @@
+_guidance()
+
+@components = __( '1' foreach .SatelliteComponent {'1'})
+if @components <= '1' num then
+	'Add components for the system' newline
+endif
+
+if not :Related requirements; then
+	'System does not have any requirements. Link to requirements table from Graph | Properties... | Related requirements' newline
+endif

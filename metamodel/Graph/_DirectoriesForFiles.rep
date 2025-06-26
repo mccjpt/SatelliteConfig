@@ -1,0 +1,23 @@
+_DirectoriesForFiles()
+/* directories for different files */
+
+@target = __(subreport '_default directory' run 'src' sep)
+
+$reqDir = __(@target 'requirement_specification' sep)
+$owlDir = __(@target 'part_catalogue' sep)
+$jsonDir = __(@target 'system_decomposition' sep)
+$reportDir = __(@target 'report' sep)
+
+filename 'GeneratorTargetDirectories.bat' write
+'del /S /Q "' @target '" 
+mkdir "' $reqDir '"
+mkdir "' $owlDir '"
+mkdir "' $jsonDir '"
+mkdir "' $reportDir '"
+'
+close
+
+external '"GeneratorTargetDirectories.bat"' executeblocking 
+
+
+

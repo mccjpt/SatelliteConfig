@@ -1,0 +1,77 @@
+Graph_Simple_GOPRR_user_3334325822
+Parts catalogue
+3_174
+Metamodel [GOPRR]
+Graph: Parts catalogue <Metamodel [GOPRR]> 3_174
+	Graph name: Parts catalogue
+	__UUID: g2gXpzwkRcyo8XaeE7pIwg
+	Namespace: 
+	Properties: Ontology name
+	Object: Ontology name <Property [GOPRR]> 3_586
+		Property name: Ontology name
+		__UUID: aQkyuO/oRXO+neH+n+RUkA
+		Local name: Name
+		Datatype: String
+		Object Datatype: 
+		Default value(s): 
+		Uniqueness: 
+		Description: 
+	Constraints: 
+	Object order: 
+	Description: Parts library
+Object: _Component <Object [GOPRR]> 3_364
+	Object name: _Component
+	__UUID: uC3NszAuTi+dxXolDn43xg
+	Properties: componentID component name hasMass
+	Object: componentID <Property [GOPRR]> 3_442
+		Property name: componentID
+		__UUID: EMBvUeTfTGOh97tmAvsOaA
+		Local name: 
+		Datatype: String
+		Object Datatype: 
+		Default value(s): 
+		Uniqueness: globally
+		Description: Component ID is mandatory and must be unique.
+	Object: component name <Property [GOPRR]> 3_472
+		Property name: component name
+		__UUID: OlJYUEi7Qdq8khFwcX1Zfg
+		Local name: name
+		Datatype: String
+		Object Datatype: 
+		Default value(s): 
+		Uniqueness: per graph
+		Description: component name is a mandatory property and unique within the system configuration.
+	Object: hasMass <Property [GOPRR]> 3_424
+		Property name: hasMass
+		__UUID: HgTJrxl0TbGnyLTYx6lZVQ
+		Local name: 
+		Datatype: Decimal
+		Object Datatype: 
+		Default value(s): 
+		Uniqueness: 
+		Description: Mandatory value.
+	Occurrence: 0
+	Description: Satellite component
+Object: ThrusterComponent <Object [GOPRR]> 3_376
+	Object name: ThrusterComponent
+	__UUID: N90GhcKCSki6JhezIlcZSg
+	Properties: 
+	Occurrence: N
+	Description: Thruster component in catalogue.
+Object: SolarPanelComponent <Object [GOPRR]> 3_388
+	Object name: SolarPanelComponent
+	__UUID: cB6vKuSyR2qoOaFSf4JNCg
+	Properties: 
+	Occurrence: N
+	Description: SolarPanel component in catalogue.
+Object: AntennaComponent <Object [GOPRR]> 3_400
+	Object name: AntennaComponent
+	__UUID: 1OTPDHMNT5CnXUmoHuiK2Q
+	Properties: 
+	Occurrence: N
+	Description: Antenna component in catalogue.
+Relationship: Inheritance [GOPRR] <Inheritance [GOPRR]> 3_412
+  Role: Subtype [GOPRR] <Subtype [GOPRR]>  Object: <Object [GOPRR]> 3_376
+  Role: Subtype [GOPRR] <Subtype [GOPRR]>  Object: <Object [GOPRR]> 3_388
+  Role: Subtype [GOPRR] <Subtype [GOPRR]>  Object: <Object [GOPRR]> 3_400
+  Role: Supertype [GOPRR] <Supertype [GOPRR]>  Object: <Object [GOPRR]> 3_364

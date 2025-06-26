@@ -1,0 +1,7 @@
+_csvContents()
+/* produces requirements list, applied also for csv generation */
+
+'RequirementID,Description,Parameter,Operator,Value,Unit' newline
+foreach .Requirement {
+	:RequirementID ',"' :Description '","' :Parameter '","' :Operator '",' :Value ',' :Unit; newline
+}	

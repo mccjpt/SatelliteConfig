@@ -1,0 +1,13 @@
+_REQ002()
+
+do stack where type = 'System configuration' {
+	foreach .SatelliteComponent {
+		@mass = __(do :Configured component; {:hasMass;})
+		if @component_mass_max < @mass num then
+			@component_mass_max = @mass
+		endif
+	}
+
+	/* applied for report summary */
+	variable 'REQ002' write @component_mass_max close
+}

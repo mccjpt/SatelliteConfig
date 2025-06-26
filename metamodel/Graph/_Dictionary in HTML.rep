@@ -1,0 +1,31 @@
+Report '_Dictionary in HTML'
+'<A NAME="' oid '"></A>' newline
+'<H2>Graph documentation: ' id '</H2>' newline
+do :()
+{
+	if id;1 <> id then 
+		'<B>' type ': </B>'
+		id '<BR>' newline
+	endif
+}
+'<BR><B>Graph picture:</B> ' id '<BR>' newline
+filename subreport '_default directory' run subreport '_id and oid' run '.png' print
+'<IMG SRC="' subreport '_id and oid' run '.png" BORDER=0 USEMAP="#' subreport '_default directory' run subreport '_id and oid' run '.png"><BR>' newline
+'<H3> Graph dictionary</H3>' newline
+subreport '__Table HTML' run '<TR><TH>Object</TH><TH>Type of object</TH><TH>Documentation</TH></TR>' newline
+foreach .() 
+{
+	'<TR><TD>' newline
+	'<A HREF="#' oid '">'
+	if id = '' then '&nbsp;'
+		else id
+	endif
+	'</A>&nbsp;<BR></TD><TD> ' type '&nbsp;</TD>' newline
+	if :Documentation; then
+		'<TD>' :Documentation; '&nbsp;</TD></TR>'
+		else '<TD>&nbsp;<BR></TD></TR>'
+	endif
+	newline
+}
+'</TABLE><BR><HR>' newline
+endreport

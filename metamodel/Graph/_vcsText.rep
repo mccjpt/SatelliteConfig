@@ -1,0 +1,8 @@
+_vcsText()
+
+_translators()
+_DirectoriesForFiles()
+
+do graphs {
+	_vcsFiles()
+}

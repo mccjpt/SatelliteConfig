@@ -1,0 +1,33 @@
+Report '_Dictionary in RTF'
+'\s2 {\*\bkmkstart g' oid '}{' id ': ' type '\par}{\*\bkmkend g' oid '}\pard\plain' newline
+	do :()
+	{if id;1 <> id then 
+		'{\b ' type ': \b0 ' id '\par}' newline
+	endif
+	}
+	'\par ' newline
+'\keep\keepn {\b Diagram picture: \b0' id '\par}' newline
+filename subreport '_default directory' run oid '.png' print
+'{\field{\*\fldinst { INCLUDEPICTURE "' oid '.png" \\* MERGEFORMAT }}{\fldrslt }}{\par \par}\pard\plain'
+	/* Dictionary table begins */
+	'{\b Graph dictionary \b0' '{\par}}'
+	'\trowd \trgaph108' 
+	subreport '_RTF table cell definitions' run	'\cellx2900'
+	subreport '_RTF table cell definitions' run	'\cellx4800'
+	subreport '_RTF table cell definitions' run	'\cellx9700\pard\plain'
+	'\intbl \b{Object\cell Type of Object\cell Documentation\cell}\b0\pard \intbl\ {\row }'
+foreach .() 
+	{
+	'\trowd \trgaph108 '
+	subreport '_RTF table cell definitions' run	'\cellx2900'
+	subreport '_RTF table cell definitions' run	'\cellx4800'
+	subreport '_RTF table cell definitions' run	'\cellx9700 \pard\plain \intbl '
+	'{{\field{\*\fldinst {HYPERLINK \\l "g' oid;1 'o' oid '" }}\ul{\fldrslt {' id '}}}\cell ' type '\cell ' newline
+	if :Documentation; then
+		:Documentation;
+		else '\~'
+	endif
+	'\cell}\pard \intbl {\row}'
+	}
+'\pard {\par}'
+endreport

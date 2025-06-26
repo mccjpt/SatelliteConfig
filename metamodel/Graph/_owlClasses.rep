@@ -1,0 +1,9 @@
+_owlClasses(@kind)
+
+'    <!-- Classes -->
+'
+do graphs where type = 'Metamodel [GOPRR]' {
+	if :Graph name = @kind then
+		_reportOntology()
+	endif
+}

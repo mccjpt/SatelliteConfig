@@ -1,0 +1,9 @@
+_Import_CSVFile(@name)
+
+'	<graph id="_1" type="Graph_Requirements_user_3926327201">
+		<slot name="Name">
+			<value>
+				<string>' @name '</string>
+			</value>
+		</slot>
+'

@@ -1,0 +1,23 @@
+Report '_Relationships in HTML'
+if metatype; = 'Object' then
+	'<B>' id '</B> relationships:<BR>' newline
+	if not ~() then 
+		'none<BR><BR>' newline
+	else 
+		subreport '__Table HTML' run '<TR><TH>In role</TH><TH>In relationship</TH><TH>With object(s)</TH><TH>In role</TH></TR>' newline
+		do ~()
+			{ '<TR><TD>' subreport '__id and type' run '&nbsp;</TD>'
+			do >()
+				{ '<TD>' subreport '__id and type' run '&nbsp;</TD>' }
+			dowhile ~()
+				{
+ 				do .() 
+					{'<TD><A HREF="#' oid '">' id '</A>&nbsp;</TD>'}
+				'<TD>' subreport '__id and type' run ' &nbsp;</TD></TR><TR><TD colspan=2>&nbsp;</TD>'
+				} newline
+			'</TR>'
+			}
+		'</TABLE><BR>' newline
+	endif
+endif
+endreport

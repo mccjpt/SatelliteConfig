@@ -1,0 +1,33 @@
+Report '_Links in HTML'
+'<B>' id '</B> links:<BR>' newline
+subreport '__Table HTML' run '<TR>'
+'<TH>Link type</TH><TH>Graph''s name</TH></TR>' newline
+'<TR><TH align="left">Decomposition</TH><TD>'
+if decompositions then 	
+	do decompositions {	
+		'<A HREF="' subreport '_id and oid' run '.html">' id '</A>' newline 
+		if $single_graph <> 'true' then
+			subreport '_graphs in HTML' run
+		endif
+	}
+else 
+	'none' newline
+endif
+'</TD></TR>' newline
+'<TR><TH align="left">Explosions</TD><TD>'
+if explosions then 
+	dowhile explosions 
+	{	
+		'<A HREF="' subreport '_id and oid' run '.html">' id '</A>' 
+		if $single_graph <> 'true' then
+			subreport '_graphs in HTML' run
+		endif
+		'<BR>' newline
+	}
+else 
+	'none'
+endif
+'</TD></TR>' newline
+'</TABLE><BR>' newline
+'<HR>' newline
+endreport

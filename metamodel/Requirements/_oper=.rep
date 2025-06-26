@@ -1,0 +1,5 @@
+_oper\=(@value, @actual)
+
+if @actual = @value num then 
+	'OK'
+endif

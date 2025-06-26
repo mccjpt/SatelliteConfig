@@ -1,0 +1,3 @@
+Report '_id and oid'
+	id;%var; '_' oid
+endreport

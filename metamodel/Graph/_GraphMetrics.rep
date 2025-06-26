@@ -1,0 +1,81 @@
+Report '_GraphMetrics'
+/* compares if graph has been already reported and adds it to the variable of reported graphs (Graphs) */
+if not $Graphs =~ oid%wildsp then
+	variable 'Graphs' append oid ' ' close
+	$num_graphs++%null
+	'METRICS (graph: ' id ')' newline
+
+/* Initializes the variables */
+	$Object_types=$Relationship_types=$Role_types=''
+	$Objects=$Roles='0'
+	$all_properties=$used_properties='0'
+
+/* Count the graph's own properties */
+	subreport '_properties for metrics' run
+
+/* Count object and relationship types found from model */ 
+
+/* Objects */
+	foreach .()  unique type {
+		variable 'Object_types' append type newline close
+		variable type write '0' close
+	}
+	foreach .() {	
+		variable type append '+1' close
+		subreport '_properties for metrics' run
+		$Objects++%null 
+	}
+
+/* Relationships */
+	foreach >()  unique type {
+		variable 'Relationship_types' append type newline close
+		variable type write '0' close
+	}
+	foreach >() {	
+		variable type append '+1' close
+		subreport '_properties for metrics' run
+	}
+
+/* Roles */
+	foreach ~()  unique type {
+		variable 'Role_types' append type newline close
+		variable type write '0' close
+	}
+	foreach ~() {
+		variable type append '+1' close
+		subreport '_properties for metrics' run
+		$Roles++%null
+	}
+
+/* Report the summary */
+	'Number of objects: ' $Objects newline
+	'Number of connections: ' math '(' $Roles '+1)//2' evaluate newline
+	'Number of roles: ' $Roles newline
+
+/* List occurrences by type */
+	do 'Object
+Relationship
+Role' {
+		variable 'listvar' write variable id '_types' read close
+		do $listvar where id<>''  {
+			'	' id ': '	
+			math variable id read evaluate 
+			' <' id;1; '>' newline 
+		}
+	}
+
+/* Report the properties */
+'Total number of properties: ' $all_properties newline 
+'Number of used properties: ' $used_properties newline 
+'Number of empty properties: ' 
+math $all_properties '-' $used_properties evaluate newline 
+
+/* Goes through the submodels */
+	foreach .() {
+		do decompositions {newline subreport '_GraphMetrics' run }
+		do explosions {newline subreport '_GraphMetrics' run }
+	}
+	foreach >() {do explosions {newline subreport '_GraphMetrics' run }}
+	foreach ~() {do explosions {newline subreport '_GraphMetrics' run }}
+endif
+endreport

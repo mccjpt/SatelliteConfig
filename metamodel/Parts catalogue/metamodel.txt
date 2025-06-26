@@ -1,0 +1,97 @@
+==========================
+Graph Type
+==========================
+Parts catalogue
+	Parts library
+	---------------------------------------------
+	Name: String
+
+==========================
+Object Types
+==========================
+AntennaComponent
+	Antenna component in catalogue.
+	---------------------------------------------
+	componentID: String
+		Component ID is mandatory and must be unique.
+		---------------------------------------------
+	name: String
+		component name is a mandatory property and unique within the system configuration.
+		---------------------------------------------
+	hasMass: String
+		Mandatory value as integer or decimal.
+		---------------------------------------------
+SolarPanelComponent
+	SolarPanel component in catalogue.
+	---------------------------------------------
+	componentID: String
+		Component ID is mandatory and must be unique.
+		---------------------------------------------
+	name: String
+		component name is a mandatory property and unique within the system configuration.
+		---------------------------------------------
+	hasMass: String
+		Mandatory value as integer or decimal.
+		---------------------------------------------
+ThrusterComponent
+	Thruster component in catalogue.
+	---------------------------------------------
+	componentID: String
+		Component ID is mandatory and must be unique.
+		---------------------------------------------
+	name: String
+		component name is a mandatory property and unique within the system configuration.
+		---------------------------------------------
+	hasMass: String
+		Mandatory value as integer or decimal.
+		---------------------------------------------
+
+==========================
+Relationship Types
+==========================
+
+==========================
+Role Types
+==========================
+
+==========================
+Extra Types
+==========================
+_Component
+	Satellite component
+	---------------------------------------------
+	componentID: String
+		Component ID is mandatory and must be unique.
+		---------------------------------------------
+	name: String
+		component name is a mandatory property and unique within the system configuration.
+		---------------------------------------------
+	hasMass: String
+		Mandatory value as integer or decimal.
+		---------------------------------------------
+
+==========================
+Bindings
+==========================
+
+==========================
+Constraints
+==========================
+Property "name" in _Component must have unique values
+
+==========================
+Subgraphs
+==========================
+
+==========================
+Generators
+==========================
+!owl
+owl
+
+==========================
+Sub-Generators
+==========================
+_owlContents
+_vcsFiles
+

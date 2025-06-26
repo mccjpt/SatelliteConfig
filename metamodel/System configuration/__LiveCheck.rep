@@ -1,0 +1,10 @@
+__LiveCheck()
+
+_guidance()
+
+if :Show = 'Calculations' then
+	_calculated_total_mass_kg()
+	'Calculated total mass: ' $calculated_total_mass_kg newline
+else
+	_ReqVerification()
+endif

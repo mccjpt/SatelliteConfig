@@ -1,0 +1,30 @@
+_Import_Reqs()
+
+@i = '1'
+do id%commaToNewline { 
+	local @i++ write id close
+}
+/* todo: update translators for input of operators */
+if @1 then /* req found */
+'	<object id="_' @1%xml '" type="Requirement">
+		<slot name="RequirementID">
+			<value><string>' @1%xml '</string></value>
+		</slot>
+		<slot name="Description">
+			<value><text>' @2%remdoublequote%xml '</text></value>
+		</slot>
+		<slot name="Parameter">
+			<value><string>' @3%remdoublequote%xml  '</string></value>
+		</slot>
+		<slot name="Operator">
+			<value><string>' @4%remdoublequote%xml  '</string></value>
+		</slot>
+		<slot name="Value">
+			<value><string>' @5%xml  '</string></value>
+		</slot>
+			<slot name="Unit">
+			<value><string>' @6%xml  '</string></value>
+		</slot>							
+	</object>
+'
+endif

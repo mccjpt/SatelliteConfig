@@ -1,0 +1,5 @@
+_REQ001()
+
+do stack where type = 'System configuration' {
+	_calculated_total_mass_kg()
+}

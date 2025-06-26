@@ -1,0 +1,12 @@
+Report '_occurrence constraint'
+
+if :Occurrence <> 'N' and :Occurrence <> '0' then
+	'<occurrence>' newline
+	'<object href="#' 
+	do contents {metatype '_' id%var _namespace() '_' _timestamp(@coll)}
+	'"></object>' newline
+	'<max>' :Occurrence '</max>' newline
+	'</occurrence>' newline
+endif
+endreport
+

@@ -1,0 +1,11 @@
+_vcsFiles()
+
+filename $reportDir 'report.md' write
+	_reportContent()	
+close 
+
+filename $jsonDir 'system_config.json' write
+	_jsonContent()
+close
+
+

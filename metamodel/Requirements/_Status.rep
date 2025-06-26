@@ -1,0 +1,13 @@
+_Status(@operator, @value, @actual)
+
+/* operators covered: =, <, >, <=, >=, <>, */
+
+@result = __(subreport '_oper' @operator arguments @value, @actual run)
+
+if @result = 'OK' then 
+	'SATISFIED'
+else
+	'NOT SATISFIED'
+	$error = 'T'
+endif
+

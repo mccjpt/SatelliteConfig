@@ -1,0 +1,19 @@
+Report '_Object properties in RTF'
+foreach .()
+{	'\s3{{\*\bkmkstart g' oid;1 'o' oid '}' id '{\*\bkmkend g' oid;1 'o' oid '}: ' type '{\par}}\pard\plain' newline
+	'{\keep\keepn Properties:\par}' newline
+	'\trowd \trgaph105'
+	subreport '_RTF table cell definitions' run	'\cellx2500'
+	subreport '_RTF table cell definitions' run	'\cellx9700\pard\plain'
+	do :()
+		{
+		'\trowd \trgaph105'
+		subreport '_RTF table cell definitions' run '\cellx2500'
+		subreport '_RTF table cell definitions' run '\cellx9700\pard \intbl{\keep\keepn \b ' type '\cell\b0 ' id '\cell}\pard \intbl {\row }' newline
+		}
+	 '\pard {\par}' newline
+	subreport '_Relationships in RTF' run
+	subreport '_Links in RTF' run
+}
+
+endreport

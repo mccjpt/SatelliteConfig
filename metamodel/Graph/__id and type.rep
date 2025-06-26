@@ -1,0 +1,5 @@
+Report '__id and type'
+if id = type then ': ' type
+else id ': ' type newline
+endif
+endreport

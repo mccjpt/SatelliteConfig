@@ -1,0 +1,89 @@
+Graph_Simple_GOPRR_user_3334325822
+Requirements
+3_171
+Metamodel [GOPRR]
+Graph: Requirements <Metamodel [GOPRR]> 3_171
+	Graph name: Requirements
+	__UUID: 4uGL4JlRTHejByeca9rdQg
+	Namespace: 
+	Properties: Requirements
+	Object: Requirements <Property [GOPRR]> 3_522
+		Property name: Requirements
+		__UUID: f6KLBT1bSvOqvLch4Tzj8w
+		Local name: Name
+		Datatype: String
+		Object Datatype: 
+		Default value(s): 
+		Uniqueness: 
+		Description: 
+	Constraints: 
+	Object order: 
+	Description: Specifies system requirements.
+Object: Requirement <Object [GOPRR]> 3_302
+	Object name: Requirement
+	__UUID: Qs0qZfkwQXCP88/BsUeuwQ
+	Properties: RequirementID Requirement description Parameter Operator Value Unit
+	Object: RequirementID <Property [GOPRR]> 3_194
+		Property name: RequirementID
+		__UUID: a4db++epT2m7ZXnN8aG9fg
+		Local name: 
+		Datatype: String
+		Object Datatype: 
+		Default value(s): 
+		Uniqueness: globally
+		Description: RequirementID is mandatory and must be unique. Use consistent naming policy, like REQxxx.
+	Object: Requirement description <Property [GOPRR]> 3_212
+		Property name: Requirement description
+		__UUID: NNdu48EIQ1SF3Wk6NEuU7g
+		Local name: Description
+		Datatype: Text
+		Object Datatype: 
+		Default value(s): 
+		Uniqueness: per graph
+		Description: 
+	Object: Parameter <Property [GOPRR]> 3_230
+		Property name: Parameter
+		__UUID: gKuCPSlAT56fpj8jGxAVPA
+		Local name: 
+		Datatype: String
+		Object Datatype: 
+		Default value(s): 
+		Uniqueness: 
+		Description: Parameter is mandatory
+	Object: Operator <Property [GOPRR]> 3_248
+		Property name: Operator
+		__UUID: 1yEQ1l6MQWaxP9/xjdOOtg
+		Local name: 
+		Datatype: Fixed List
+		Object Datatype: 
+		Default value(s): =
+<
+>
+<=
+>=
+<>
+		Uniqueness: 
+		Description: 
+	Object: Value <Property [GOPRR]> 3_266
+		Property name: Value
+		__UUID: mHwuFMVhTcWzZZ9WTCTR3w
+		Local name: 
+		Datatype: String
+		Object Datatype: 
+		Default value(s): 
+		Uniqueness: 
+		Description: Value is mandatory,
+	Object: Unit <Property [GOPRR]> 3_284
+		Property name: Unit
+		__UUID: A2Udhhf+RpKOjOsO16UJjQ
+		Local name: 
+		Datatype: Overridable List
+		Object Datatype: 
+		Default value(s): kg
+min
+sec
+hour
+		Uniqueness: 
+		Description: 
+	Occurrence: N
+	Description: Requirement for the system consisting of its  uniwue ID, description and constraint expressed with parameter, operator and value.

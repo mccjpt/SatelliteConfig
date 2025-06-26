@@ -1,0 +1,28 @@
+_importTranslators()
+
+_translators()
+
+/* Translates comma into newline */
+to '%commaToNewline
+, \
+'
+endto
+
+to '%fileName
+/^(.*\\)(.*)\.(.*)$/ $$2'
+endto
+
+to '%remdoublequote
+" $'
+endto
+
+/* todo: opposite of %xml 
+to '%xml
+& $&amp;
+< $&lt;
+> $&gt;
+" $&quot;
+	 $&#x9;
+\
+ $&#xA;'
+endto */

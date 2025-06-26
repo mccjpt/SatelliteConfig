@@ -1,0 +1,5 @@
+_owl_file()
+
+filename $owlDir 'ontology.owl' write
+	_owlContents()
+close

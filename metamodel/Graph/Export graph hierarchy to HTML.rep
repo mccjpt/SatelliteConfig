@@ -1,0 +1,16 @@
+Report 'Export graph hierarchy to HTML'
+/*	Creates HTML documentation for the selected graph which also follows the submodel hieararchy:
+*	Calls _translators subreport, which is used later when producing the id in the variable format for the file and picture names
+*  Stores the starting graph into a variable value
+*	Sets a reported Graphs variable empty
+*	Calls _graphs-subreport
+*	Executes the starting graph html-file with the default www browser
+*/
+subreport '_translators' run
+if $starting_graph = '' then 
+	variable 'starting_graph' write subreport '_id and oid' run close
+	$Graphs=' '
+endif
+subreport '_graphs in HTML' run 
+external '"' subreport '_default directory' run $starting_graph '.html"' execute 
+endreport

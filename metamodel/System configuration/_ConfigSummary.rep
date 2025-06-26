@@ -1,0 +1,18 @@
+_ConfigSummary()
+
+'## 1. System Configuration Summary' newline newline
+'- **System ID:** ' id newline
+'- **Description:** ':Description', Version ' :Version; newline 
+'- **Components List:**' newline
+
+@mass = '0'
+foreach .SatelliteComponent {	
+	do :Configured component; {
+		'    - ' :name; ' (' :componentID '): ' :Quantity;1 ' unit(s) at ' :hasMass ' kg/unit' newline
+		local 'mass' append '+(' :Quantity;1 '*':hasMass; ')' close
+	}
+}
+
+if @mass then
+	'- **Calculated Total Mass:** 'math @mass evaluate ' kg' newline newline
+endif

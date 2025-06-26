@@ -1,0 +1,10 @@
+_owlIndividuals()
+
+'
+    <owl:NamedIndividual rdf:about="http://www.example.com/satellite#' :name '">
+        <rdf:type rdf:resource="http://www.example.com/satellite#' type '"/>
+        <componentID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">' :componentID '</componentID>
+        <hasMass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">' :hasMass '</hasMass>
+    </owl:NamedIndividual>
+'
+

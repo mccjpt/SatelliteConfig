@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbolLibrary xmlns="http://www.metacase.com/symbol" xmlns:sym="http://www.metacase.com/symbol">
+	<librarySymbol name="SolarPanelComponent_sub">
+		<objectSymbol offset="40,10" scaleFilter="1,1">
+			<defaultConnectable isSticky="true" points="40,10 80,10 80,50 40,50 40,10" targetPointX="60" targetPointY="30" usesGrid="false"></defaultConnectable>
+			<svg baseProfile="tiny" height="50" version="1.2" width="80" xmlns="http://www.w3.org/2000/svg">
+				<defs>
+					<radialGradient cx="0.55" cy="0.188889" gradientUnits="objectBoundingBox" id="gradient3" r="0.668539" sym:correctGamma="true" sym:fillType="PathFill">
+						<stop offset="0" stop-color="rgb(0,0,0)"></stop>
+						<stop offset="0.482342" stop-color="rgb(64,64,64)"></stop>
+						<stop offset="1" stop-color="rgb(0,0,0)"></stop>
+					</radialGradient>
+					<radialGradient cx="0.55" cy="0.188889" gradientUnits="objectBoundingBox" id="gradient1" r="0.668539" sym:correctGamma="true" sym:fillType="PathFill">
+						<stop offset="0" stop-color="rgb(0,0,0)"></stop>
+						<stop offset="0.482342" stop-color="rgb(64,64,64)"></stop>
+						<stop offset="1" stop-color="rgb(0,0,0)"></stop>
+					</radialGradient>
+					<radialGradient cx="0.55" cy="0.188889" gradientUnits="objectBoundingBox" id="gradient2" r="0.668539" sym:correctGamma="true" sym:fillType="PathFill">
+						<stop offset="0" stop-color="rgb(0,0,0)"></stop>
+						<stop offset="0.482342" stop-color="rgb(64,64,64)"></stop>
+						<stop offset="1" stop-color="rgb(0,0,0)"></stop>
+					</radialGradient>
+				</defs>
+				<g fill="none" stroke="rgb(0,0,0)" stroke-width="1" sym:height="40" sym:width="40" sym:x="4.0e1" sym:y="1.0e1">
+					<rect fill="rgb(96,96,96)" height="2.66667" rx="0" ry="0" stroke="rgb(0,0,0)" stroke-width="1" width="40" x="40" y="28.6667">
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</rect>
+					<g fill="none" stroke="rgb(0,0,0)" stroke-width="1" sym:height="40" sym:width="8" sym:x="4.0e1" sym:y="1.0e1">
+						<rect fill="url(#gradient1)" height="40" rx="0" ry="0" stroke="rgb(0,0,0)" stroke-width="1" width="8" x="40" y="10">
+							<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+						</rect>
+						<rect fill="none" height="13.3333" rx="0" ry="0" stroke="rgb(0,0,0)" stroke-width="1" width="8" x="40" y="23.3333">
+							<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+						</rect>
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</g>
+					<g fill="none" stroke="rgb(0,0,0)" stroke-width="1" sym:height="40" sym:width="8" sym:x="5.2e1" sym:y="1.0e1">
+						<rect fill="url(#gradient2)" height="40" rx="0" ry="0" stroke="rgb(0,0,0)" stroke-width="1" width="8" x="52" y="10">
+							<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+						</rect>
+						<rect fill="none" height="13.3333" rx="0" ry="0" stroke="rgb(0,0,0)" stroke-width="1" width="8" x="52" y="23.3333">
+							<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+						</rect>
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</g>
+					<g fill="none" stroke="rgb(0,0,0)" stroke-width="1" sym:height="40" sym:width="8" sym:x="6.4e1" sym:y="1.0e1">
+						<rect fill="url(#gradient3)" height="40" rx="0" ry="0" stroke="rgb(0,0,0)" stroke-width="1" width="8" x="64" y="10">
+							<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+						</rect>
+						<rect fill="none" height="13.3333" rx="0" ry="0" stroke="rgb(0,0,0)" stroke-width="1" width="8" x="64" y="23.3333">
+							<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+						</rect>
+						<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+					</g>
+					<metaInfo xmlns="http://www.metacase.com/symbol"></metaInfo>
+				</g>
+			</svg>
+		</objectSymbol>
+	</librarySymbol>
+</symbolLibrary>

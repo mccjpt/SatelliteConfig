@@ -1,0 +1,15 @@
+_ReqVerification()
+do :Related requirements; {
+	foreach .Requirement {
+	'| ' :RequirementID ' | ' :Description ' | ' :Parameter ' | ' :Operator; :Value ' | ' 
+	@req = :RequirementID; 
+	@operator = :Operator;
+	@value = :Value;
+	subreport '_' :RequirementID; run
+	@actual = __(variable @req read)
+	@actual ' | ' :Unit ' | ' _Status(@operator, @value, @actual) ' | ' newline
+	@operator = @value = @actual = ''
+	}	
+}
+newline
+

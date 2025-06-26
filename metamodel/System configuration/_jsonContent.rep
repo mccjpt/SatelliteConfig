@@ -1,0 +1,24 @@
+_jsonContent()
+'{
+  "system_id": "':System id;'",
+  "description": "':Description', Version ' :Version '",
+  "components": [' 
+
+@mass = '0'
+foreach .SatelliteComponent; orderby do :Configured component; {type} {	
+	@sep @sep = ',' newline
+	do :Configured component; {
+	'    {
+      "id": "':componentID'",
+      "name": "':name'",
+      "type": "'type'",
+      "quantity": ':Quantity;1',
+      "mass_kg_per_unit": ':hasMass;'
+    }'
+		local 'mass' append '+(' :Quantity;1 '*':hasMass; ')' close
+		}
+	}
+'
+  ],
+  "calculated_total_mass_kg": ' math @mass evaluate '
+}' 
