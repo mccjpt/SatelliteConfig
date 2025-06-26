@@ -1,0 +1,20 @@
+Graph_Requirements_user_3926327201
+requirements
+4_124
+Requirements
+Graph: requirements <Requirements> 4_124
+	Name: requirements
+Object: REQ001Total system mass for system configuration must be acceptable <Requirement> 4_131
+	RequirementID: REQ001
+	Description: Total system mass for system configuration must be acceptable
+	Parameter: calculated_total_mass_kg
+	Operator: <=
+	Value: 350
+	Unit: kg
+Object: REQ002Maximum individual component mass <Requirement> 4_157
+	RequirementID: REQ002
+	Description: Maximum individual component mass
+	Parameter: component_mass_max
+	Operator: <=
+	Value: 200
+	Unit: kg

@@ -1,0 +1,7 @@
+{
+  "system_id": "SatAlpha",
+  "description": "Satellite configuration for SatAlpha, Version 0",
+  "components": [
+  ],
+  "calculated_total_mass_kg": 0
+}
