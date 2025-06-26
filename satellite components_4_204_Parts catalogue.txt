@@ -4,3 +4,11 @@ satellite components
 Parts catalogue
 Graph: satellite components <Parts catalogue> 4_204
 	Name: satellite components
+Object: ANT001 <AntennaComponent> 4_212
+	componentID: ANT001
+	name: CommAntenna001
+	hasMass: 20.0
+Object: ANT002 <AntennaComponent> 4_222
+	componentID: ANT002
+	name: CommAntenna002
+	hasMass: 20.0
