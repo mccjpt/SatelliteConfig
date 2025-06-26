@@ -20,3 +20,7 @@ Object: SP001A <SolarPanelComponent> 4_246
 	componentID: SP001A
 	name: SolarPanel_A
 	hasMass: 75.2
+Object: T001 <ThrusterComponent> 4_260
+	componentID: T001
+	name: MainThruster001
+	hasMass: 150.5

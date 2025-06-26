@@ -58,4 +58,10 @@
         <componentID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SP001B</componentID>
         <hasMass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">75.2</hasMass>
     </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.example.com/satellite#MainThruster001">
+        <rdf:type rdf:resource="http://www.example.com/satellite#ThrusterComponent"/>
+        <componentID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T001</componentID>
+        <hasMass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">150.5</hasMass>
+    </owl:NamedIndividual>
 </rdf:RDF>
