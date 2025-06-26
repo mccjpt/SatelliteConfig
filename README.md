@@ -16,7 +16,7 @@ The modeling solution presented enables collaborative simultaneous work directly
 
 4. Start MetaEdit+, select the new 'SatAlphaVersion1' repository and 'SatAlpha' project. For login there are four different users available: user 'config' with password 'config' defines the configurations and requirements, and 'antenna', 'solar' and 'thurster' manage the components in parts catalogue and create views.
 
-_For more details about satellite configuration scenarios, see the MoM challenge in https://doi.org/10.5281/zenodo.15285132
+For more details about satellite configuration scenarios, see the MoM challenge in https://doi.org/10.5281/zenodo.15285132
 
 The repository provided for MetaEdit+ can be used in both single-user and multi-user versions, the latter offering simultaneous collaborative modeling. The instructions given here are for single-user MetaEdit+, and details about multi-user version are outlined in https://www.metacase.com/mep/multi-user.html and detailed in MetaEdit+ User’s Guides.
 
