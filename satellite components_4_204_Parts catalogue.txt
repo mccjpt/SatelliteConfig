@@ -12,3 +12,11 @@ Object: ANT002 <AntennaComponent> 4_222
 	componentID: ANT002
 	name: CommAntenna002
 	hasMass: 20.0
+Object: SP001B <SolarPanelComponent> 4_236
+	componentID: SP001B
+	name: SolarPanel_B
+	hasMass: 75.2
+Object: SP001A <SolarPanelComponent> 4_246
+	componentID: SP001A
+	name: SolarPanel_A
+	hasMass: 75.2
