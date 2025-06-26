@@ -1,6 +1,6 @@
 {
   "system_id": "SatAlpha",
-  "description": "Satellite configuration for SatAlpha, Version 1",
+  "description": "Satellite configuration for SatAlpha, Version 2",
   "components": [
     {
       "id": "ANT001",

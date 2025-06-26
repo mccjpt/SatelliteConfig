@@ -9,7 +9,7 @@ Object: REQ001Total system mass for system configuration must be acceptable <Req
 	Description: Total system mass for system configuration must be acceptable
 	Parameter: calculated_total_mass_kg
 	Operator: <=
-	Value: 350
+	Value: 360
 	Unit: kg
 Object: REQ002Maximum individual component mass <Requirement> 4_157
 	RequirementID: REQ002

@@ -1,10 +1,10 @@
 Graph_System_configuration_user_3926327212
-SatAlphaV1
+SatAlphaV2
 4_186
 System configuration
-Graph: SatAlphaV1 <System configuration> 4_186
+Graph: SatAlphaV2 <System configuration> 4_186
 	System id: SatAlpha
-	Version: 1
+	Version: 2
 	Description: Satellite configuration for SatAlpha
 	Related requirements: requirements
 	Graph: requirements <Requirements> 4_124
