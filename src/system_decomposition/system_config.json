@@ -35,8 +35,8 @@
       "name": "MainThruster001",
       "type": "ThrusterComponent",
       "quantity": 1,
-      "mass_kg_per_unit": 150.5
+      "mass_kg_per_unit": 165.0
     }
   ],
-  "calculated_total_mass_kg": 340.9
+  "calculated_total_mass_kg": 355.4
 }

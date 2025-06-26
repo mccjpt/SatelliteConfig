@@ -15,7 +15,7 @@ Object: 1=T001:MainThruster001<ThrusterComponent> <SatelliteComponent> 4_269
 	Object: T001 <ThrusterComponent> 4_260
 		componentID: T001
 		name: MainThruster001
-		hasMass: 150.5
+		hasMass: 165.0
 	Quantity: 1
 Object: 1=ANT001:CommAntenna001<AntennaComponent> <SatelliteComponent> 4_276
 	Configured component: ANT001
