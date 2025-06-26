@@ -1,0 +1,47 @@
+Graph_System_configuration_user_3926327212
+SatAlphaV1
+4_186
+System configuration
+Graph: SatAlphaV1 <System configuration> 4_186
+	System id: SatAlpha
+	Version: 1
+	Description: Satellite configuration for SatAlpha
+	Related requirements: requirements
+	Graph: requirements <Requirements> 4_124
+		Name: requirements
+	Show: Requirements verification
+Object: 1=T001:MainThruster001<ThrusterComponent> <SatelliteComponent> 4_269
+	Configured component: T001
+	Object: T001 <ThrusterComponent> 4_260
+		componentID: T001
+		name: MainThruster001
+		hasMass: 150.5
+	Quantity: 1
+Object: 1=ANT001:CommAntenna001<AntennaComponent> <SatelliteComponent> 4_276
+	Configured component: ANT001
+	Object: ANT001 <AntennaComponent> 4_212
+		componentID: ANT001
+		name: CommAntenna001
+		hasMass: 20.0
+	Quantity: 1
+Object: 1=ANT002:CommAntenna002<AntennaComponent> <SatelliteComponent> 4_283
+	Configured component: ANT002
+	Object: ANT002 <AntennaComponent> 4_222
+		componentID: ANT002
+		name: CommAntenna002
+		hasMass: 20.0
+	Quantity: 1
+Object: 1=SP001A:SolarPanel_A<SolarPanelComponent> <SatelliteComponent> 4_290
+	Configured component: SP001A
+	Object: SP001A <SolarPanelComponent> 4_246
+		componentID: SP001A
+		name: SolarPanel_A
+		hasMass: 75.2
+	Quantity: 1
+Object: 1=SP001B:SolarPanel_B<SolarPanelComponent> <SatelliteComponent> 4_297
+	Configured component: SP001B
+	Object: SP001B <SolarPanelComponent> 4_236
+		componentID: SP001B
+		name: SolarPanel_B
+		hasMass: 75.2
+	Quantity: 1

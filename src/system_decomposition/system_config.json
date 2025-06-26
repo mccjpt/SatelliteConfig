@@ -1,7 +1,42 @@
 {
   "system_id": "SatAlpha",
-  "description": "Satellite configuration for SatAlpha, Version 0",
+  "description": "Satellite configuration for SatAlpha, Version 1",
   "components": [
+    {
+      "id": "ANT001",
+      "name": "CommAntenna001",
+      "type": "AntennaComponent",
+      "quantity": 1,
+      "mass_kg_per_unit": 20.0
+    },
+    {
+      "id": "ANT002",
+      "name": "CommAntenna002",
+      "type": "AntennaComponent",
+      "quantity": 1,
+      "mass_kg_per_unit": 20.0
+    },
+    {
+      "id": "SP001A",
+      "name": "SolarPanel_A",
+      "type": "SolarPanelComponent",
+      "quantity": 1,
+      "mass_kg_per_unit": 75.2
+    },
+    {
+      "id": "SP001B",
+      "name": "SolarPanel_B",
+      "type": "SolarPanelComponent",
+      "quantity": 1,
+      "mass_kg_per_unit": 75.2
+    },
+    {
+      "id": "T001",
+      "name": "MainThruster001",
+      "type": "ThrusterComponent",
+      "quantity": 1,
+      "mass_kg_per_unit": 150.5
+    }
   ],
-  "calculated_total_mass_kg": 0
+  "calculated_total_mass_kg": 340.9
 }
