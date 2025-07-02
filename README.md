@@ -12,7 +12,9 @@ The modeling solution presented enables collaborative simultaneous work directly
 
 2. Download the intial MetaEdit+ repository version, the binary file asset [SatelliteConfig1.zip](https://github.com/mccjpt/SatelliteConfig/releases/download/1/SatelliteConfig1.zip) from Release 1 here.
 
-3. Unzip SatelliteConfig1.zip into your MetaEdit+ working directory (e.g. Documents\MetaEdit+ 5.5)
+3. Unzip SatelliteConfig1.zip into your MetaEdit+ working directory (e.g. Documents\MetaEdit+ 5.5), to create:
+   - SatelliteConfig directory with the MetaEdit+ repository
+   - reports\src directory with the .owl, .json etc. files
 
 4. Start MetaEdit+, select the new 'SatelliteConfig' repository and both its projects, and choose 'SatAlpha' as the Default project. Enter User Name and Password as 'config', 'antenna', 'solar' or 'thruster', and press Login.
 
