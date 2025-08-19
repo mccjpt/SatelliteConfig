@@ -4,6 +4,8 @@ A demonstration of how MetaEdit+ supports the Model Management Challenge 2025 (h
 
 The modeling solution presented enables collaborative simultaneous work directly in high-level models, minimizes the effort of modeling and integration, provides fast feedback on changes, keeps artefacts consistent, traceable and up-to-date, and provides hassle-free versioning. 
 
+_For details about MetaEdit+ based solution for the Model Management challenge see the published [article](https://metacase.com/papers/MoM2025_Challenge-MetaEdit+-camera_ready.pdf)._
+
 ## Quick Start
 
 **To see the how MetaEdit+ supports merge-free collaborative modeling with user-defined domain-specific modeling languages:**
